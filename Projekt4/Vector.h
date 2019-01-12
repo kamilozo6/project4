@@ -1,7 +1,8 @@
 #pragma once
-#include "Matrix.h"
-class Vector :
-	public Matrix
+#include <stdint.h>
+#include <cmath>
+
+class Vector
 {
 private:
 	double_t *vectorTable;
@@ -17,5 +18,27 @@ public:
 	{
 		return vectorSize;
 	}
+
+	double_t GetVectorCell(uint32_t row)
+	{
+		return vectorTable[row];
+	}
+
+	void SetVectorCell(uint32_t row, double_t value)
+	{
+		vectorTable[row] = value;
+	}
+
+	Vector& operator = (Vector*& input);
+
+	uint32_t ReturnIndex(uint32_t yes, uint32_t no, uint32_t n);
+
+	void WriteToConsole();
+
+	double_t CountNorm();
+
+	void CopySubstract(Vector*& minuend, Vector*& subtrahend);
+
+	void CopyValues(Vector*& source);
 };
 
