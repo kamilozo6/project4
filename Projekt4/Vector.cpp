@@ -94,7 +94,7 @@ void Vector::WriteToConsole()
 {
 	for (uint32_t i = 0; i < vectorSize; i++)
 	{
-		printf("%.2f\n", vectorTable[i]);
+		printf("%.5f\n", vectorTable[i]);
 	}
 	printf("\n");
 }

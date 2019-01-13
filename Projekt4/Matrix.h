@@ -5,51 +5,38 @@
 #include "Vector.h"
 
 
-#define MATRIX_MAP std::unordered_map<uint32_t, double_t>
-#define COLUMN_MAP std::unordered_set<uint32_t>
-
 class Matrix
 {
-private:
-	// array of maps, size is n*n
-	MATRIX_MAP *matrixTable;
-	COLUMN_MAP *rowsInColumn;
+protected:
 	uint32_t matrixSize;
 public:
 	Matrix();
 	~Matrix();
 
-	static Matrix* Create(uint32_t size);
-
-	virtual void EvaluateProbability(uint32_t n);
+	void EvaluateProbability(uint32_t n);
 	void ProbablilityForSpecificCase(uint32_t yes, uint32_t no, uint32_t n);
 	uint32_t ReturnIndex(uint32_t yes, uint32_t no, uint32_t n);
-
-	void WriteToConsole();
-
-	Matrix& operator = (Matrix*& input);
 
 	uint32_t GetMatrixSize()
 	{
 		return matrixSize;
 	}
 
-	double_t GetMatrixCell(uint32_t row, uint32_t collumn)
-	{
-		return matrixTable[row][collumn];
-	}
+	virtual void WriteToConsole() = 0;
 
-	MATRIX_MAP& GetRowMap(uint32_t row)
-	{
-		return matrixTable[row];
-	}
+	virtual double_t GetMatrixCell(uint32_t row, uint32_t column) = 0;
 
-	void SetMatrixCell(uint32_t row, uint32_t column, double_t value);
+	virtual void SetMatrixCell(uint32_t row, uint32_t column, double_t value) = 0;
 
-	void ResetValuesInCurrentColumn(uint32_t column, Vector& vectorB);
+	virtual void ResetValuesInCurrentColumn(uint32_t column, Vector& vectorB) = 0;
 
-	void CountXvalue(uint32_t row, Vector*& vectorX, Vector& vectorB);
+	virtual void CountXvalue(uint32_t row, Vector*& vectorX, Vector& vectorB) = 0;
 
-	void CountXValuesForIteration(uint32_t row, Vector*& vectorX, Vector*& vectorNewX, Vector*& baseB);
+	virtual void CountXValuesForIteration(uint32_t row, Vector*& vectorX, Vector*& vectorNewX, Vector*& baseB) = 0;
+
+	virtual uint32_t SearchBestRow(uint32_t k) = 0;
+
+	virtual void ChangeRows(uint32_t k, uint32_t best) = 0;
+
 };
 

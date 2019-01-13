@@ -11,7 +11,9 @@ public:
 	Methods();
 	~Methods();
 
-	static Vector* Gauss(Matrix *baseA, Vector *baseB);
-	static Vector* GaussSeidel(Matrix *baseA, Vector *baseB);
+	static Vector* Gauss(Matrix *baseA, Vector *baseB, double_t *time = nullptr);
+	static Vector* GaussSeidel(Matrix *baseA, Vector *baseB, double_t *time = nullptr);
+	static void Eigen(Matrix *baseA, Vector *baseB, double_t *time = nullptr);
+
 };
 
