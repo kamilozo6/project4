@@ -1,0 +1,6 @@
+Wynik dla macierzy 100000: 322391.045620
+Wynik dla macierzy 100000: 2.813238
+Wynik dla macierzy 100000: 39507.273036
+Wynik dla macierzy 100000: 16.873796
+Wynik dla macierzy 100000: 7507.261703
+Wynik dla macierzy 100000: 1.887954

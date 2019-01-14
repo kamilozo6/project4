@@ -1,6 +1,6 @@
 #pragma once
-#include <unordered_map>
-#include <unordered_set>
+#include <stdint.h>
+#include <cmath>
 #include <algorithm>
 #include "Vector.h"
 

@@ -135,7 +135,8 @@ void SparseMatrix::CountXValuesForIteration(uint32_t row, Vector *& vectorX, Vec
 
 uint32_t SparseMatrix::SearchBestRow(uint32_t k)
 {
-	uint32_t best, actual, row=k;
+	double_t best, actual;
+	uint32_t row = k;
 	std::set<uint32_t, std::greater<uint32_t>> sortedColumnSet(rowsInColumn[k].begin(), rowsInColumn[k].end());
 	for (auto value : sortedColumnSet)
 	{

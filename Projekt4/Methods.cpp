@@ -19,7 +19,7 @@ Vector * Methods::Gauss(Matrix * baseA, Vector * baseB, double_t *time)
 
 	LARGE_INTEGER start, end;
 	QueryPerformanceFrequency(&start);
-	double_t freq = (double_t)start.QuadPart;
+	double_t freq = (double_t)start.QuadPart / 1000.0;
 	QueryPerformanceCounter(&start);
 
 	for (uint32_t k = 0; k < baseA->GetMatrixSize() - 1; k++)
@@ -48,7 +48,7 @@ Vector * Methods::GaussSeidel(Matrix * baseA, Vector * baseB, double_t *time)
 
 	LARGE_INTEGER start, end;
 	QueryPerformanceFrequency(&start);
-	double_t freq = (double_t)start.QuadPart;
+	double_t freq = (double_t)start.QuadPart / 1000.0;
 	QueryPerformanceCounter(&start);
 
 	while (diff->CountNorm() > PRECISION)
@@ -90,7 +90,7 @@ void Methods::Eigen(Matrix * baseA, Vector * baseB, double_t * time)
 	Eigen::SparseLU<Eigen::SparseMatrix<double>> solv;
 	solv.compute(eigA);
 	QueryPerformanceFrequency(&start);
-	double freq = (double)start.QuadPart;
+	double freq = (double)start.QuadPart / 1000.0;
 	QueryPerformanceCounter(&start);
 
 	eigX = solv.solve(eigB);

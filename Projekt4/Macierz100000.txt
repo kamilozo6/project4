@@ -1,0 +1,17 @@
+Gauss bez optymalizacji
+Wynik dla macierzy 100000: 341633.886665
+
+Budowanie dla macierzy normalnej
+Wynik dla macierzy 100000: 2.150359
+
+Gauss z optymalizacja
+Wynik dla macierzy 100000: 37144.169718
+
+Budowanie dla macierzy rzadkiej
+Wynik dla macierzy 100000: 15.166033
+
+Gauss-Seidel
+Wynik dla macierzy 100000: 7180.567105
+
+Eigen
+Wynik dla macierzy 100000: 1.644011

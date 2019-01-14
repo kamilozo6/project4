@@ -15,6 +15,9 @@
 class Approximation
 {
 public:
+
+	FILE *f1, *f2, *f3, *f4;
+
 	Approximation();
 	~Approximation();
 

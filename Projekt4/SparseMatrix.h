@@ -1,4 +1,6 @@
 #pragma once
+#include <unordered_map>
+#include <unordered_set>
 #include "Matrix.h"
 
 #define MATRIX_MAP std::unordered_map<uint32_t, double_t>

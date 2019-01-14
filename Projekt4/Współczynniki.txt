@@ -1,0 +1,27 @@
+Wspó³czynnik przy niewiadomej: -16,278752
+Wspó³czynnik przy niewiadomej: 3,543500
+Wspó³czynnik przy niewiadomej: -0,186993
+Wspó³czynnik przy niewiadomej: 0,003093
+
+Budowanie macierzy normalnej
+Wspó³czynnik przy niewiadomej: -0,057818
+Wspó³czynnik przy niewiadomej: 0,004416
+
+Gauss z optymalizcja
+Wspó³czynnik przy niewiadomej: 48,759747
+Wspó³czynnik przy niewiadomej: -6,500325
+Wspó³czynnik przy niewiadomej: 0,161382
+
+Budowanie dla macierzy rzadkiej
+Wspó³czynnik przy niewiadomej: -0,425751
+Wspó³czynnik przy niewiadomej: 0,031184
+
+Gauss-Seidel
+Wspó³czynnik przy niewiadomej: 5,529667
+Wspó³czynnik przy niewiadomej: -0,872558
+Wspó³czynnik przy niewiadomej: 0,030445
+
+Eigen
+Wspó³czynnik przy niewiadomej: -0,046883
+Wspó³czynnik przy niewiadomej: 0,003382
+

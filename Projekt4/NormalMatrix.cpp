@@ -100,7 +100,8 @@ void NormalMatrix::CountXValuesForIteration(uint32_t row, Vector *& vectorX, Vec
 
 uint32_t NormalMatrix::SearchBestRow(uint32_t k)
 {
-	uint32_t best, actual, row = k;
+	double_t best, actual;
+	uint32_t row = k;
 	for (uint32_t value = k + 1; value < matrixSize; value++)
 	{
 		actual = abs(matrixTable[value][k]);

@@ -1,0 +1,17 @@
+Gauss bez optymalizacji
+B³ad aproksymacji:53.934484
+
+Budowanie dla macierzy normalnej
+B³ad aproksymacji:0.576642
+
+Gauss z optymalizacja
+B³ad aproksymacji:154.536513
+
+Budowanie dla macierzy rzadkiej
+B³ad aproksymacji:2.122734
+
+Gauss-Seidel
+B³ad aproksymacji:22.447830
+
+Eigen
+B³ad aproksymacji:0.255882
